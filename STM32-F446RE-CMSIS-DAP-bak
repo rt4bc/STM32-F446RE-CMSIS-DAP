@@ -1,0 +1,98 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Interface_USB:USB3341 U?
+U 1 1 603BE469
+P 2070 5130
+F 0 "U?" H 2070 4141 50  0000 C CNN
+F 1 "USB3341" H 2070 4050 50  0000 C CNN
+F 2 "Package_DFN_QFN:QFN-24-1EP_4x4mm_P0.5mm_EP2.6x2.6mm" H 2570 5230 50  0001 C CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/334x.pdf" H 2570 5330 50  0001 C CNN
+	1    2070 5130
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:USB_A J?
+U 1 1 603BF2B7
+P 1640 1850
+F 0 "J?" H 1697 2317 50  0000 C CNN
+F 1 "USB_A" H 1697 2226 50  0000 C CNN
+F 2 "" H 1790 1800 50  0001 C CNN
+F 3 " ~" H 1790 1800 50  0001 C CNN
+	1    1640 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 603CE5DA
+P 2330 1540
+F 0 "#PWR?" H 2330 1390 50  0001 C CNN
+F 1 "+5V" H 2345 1713 50  0000 C CNN
+F 2 "" H 2330 1540 50  0001 C CNN
+F 3 "" H 2330 1540 50  0001 C CNN
+	1    2330 1540
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 603D0717
+P 1540 2320
+F 0 "#PWR?" H 1540 2070 50  0001 C CNN
+F 1 "GND" H 1545 2147 50  0000 C CNN
+F 2 "" H 1540 2320 50  0001 C CNN
+F 3 "" H 1540 2320 50  0001 C CNN
+	1    1540 2320
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1540 2250 1540 2320
+Wire Wire Line
+	1640 2250 1640 2320
+Wire Wire Line
+	1640 2320 1540 2320
+Connection ~ 1540 2320
+Text Label 1950 1850 0    50   ~ 0
+USB_DP
+Text Label 1950 1950 0    50   ~ 0
+USB_DM
+Wire Wire Line
+	1940 1850 2240 1850
+Wire Wire Line
+	1940 1950 2240 1950
+$Comp
+L Diode:1N4007 D?
+U 1 1 60417464
+P 2150 1650
+F 0 "D?" H 2150 1775 50  0000 C CNN
+F 1 "1N4007" H 2150 1776 50  0001 C CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 2150 1475 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/88503/1n4001.pdf" H 2150 1650 50  0001 C CNN
+	1    2150 1650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2330 1540 2330 1650
+Wire Wire Line
+	2330 1650 2300 1650
+Wire Wire Line
+	1940 1650 2000 1650
+Wire Wire Line
+	1060 4630 1470 4630
+Wire Wire Line
+	1060 4930 1470 4930
+Wire Wire Line
+	1060 5030 1470 5030
+$EndSCHEMATC

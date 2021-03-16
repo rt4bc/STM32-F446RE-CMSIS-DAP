@@ -2,3 +2,6 @@
 Tranplant  a HS USB design from official design, based on STM32-F446RE.
 [[file:https://arm-software.github.io/CMSIS_5/DAP/html/CMSIS_DAP_INTERFACE.png]]
 
+* USB Type C
+[[file:https://github.com/rt4bc/STM32-F446RE-CMSIS-DAP/blob/main/docs/usb-typec.png]]
+

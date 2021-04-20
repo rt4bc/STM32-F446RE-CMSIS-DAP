@@ -1058,27 +1058,27 @@ Wire Wire Line
 $Comp
 L power:GND #PWR049
 U 1 1 6067BCF5
-P 10250 3080
-F 0 "#PWR049" H 10250 2830 50  0001 C CNN
-F 1 "GND" H 10255 2907 50  0000 C CNN
-F 2 "" H 10250 3080 50  0001 C CNN
-F 3 "" H 10250 3080 50  0001 C CNN
-	1    10250 3080
+P 10240 3330
+F 0 "#PWR049" H 10240 3080 50  0001 C CNN
+F 1 "GND" H 10245 3157 50  0000 C CNN
+F 2 "" H 10240 3330 50  0001 C CNN
+F 3 "" H 10240 3330 50  0001 C CNN
+	1    10240 3330
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	10250 3040 10250 3080
+	10240 3290 10240 3330
 Wire Wire Line
-	9950 2940 10250 2940
+	9940 3190 10240 3190
 Wire Wire Line
-	9950 2840 10250 2840
+	9940 3090 10240 3090
 Wire Wire Line
-	9950 2740 10250 2740
-Text Label 9950 2740 0    50   ~ 0
+	9940 2990 10240 2990
+Text Label 9940 2990 0    50   ~ 0
 SWDIO
-Text Label 9950 2840 0    50   ~ 0
+Text Label 9940 3090 0    50   ~ 0
 SWCLK
-Text Label 9950 2940 0    50   ~ 0
+Text Label 9940 3190 0    50   ~ 0
 NRST
 Text Label 8820 2820 0    50   ~ 0
 SWDIO
@@ -1105,7 +1105,7 @@ Wire Wire Line
 Connection ~ 10610 2040
 Wire Wire Line
 	10610 2040 10800 2040
-Text Notes 10530 2920 0    50   ~ 0
+Text Notes 10520 3170 0    50   ~ 0
 Debug
 Text Notes 10540 3780 0    50   ~ 0
 DAP Interface
@@ -1385,17 +1385,6 @@ Wire Wire Line
 	4440 2510 4770 2510
 Wire Wire Line
 	2420 1540 2490 1540
-$Comp
-L Connector_Generic:Conn_01x04 J5
-U 1 1 606CF531
-P 10450 2840
-F 0 "J5" H 10440 3030 50  0000 C CNN
-F 1 "Conn_01x04" H 10368 2506 50  0001 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Horizontal" H 10450 2840 50  0001 C CNN
-F 3 "~" H 10450 2840 50  0001 C CNN
-	1    10450 2840
-	1    0    0    -1  
-$EndComp
 Text Label 9660 5900 0    50   ~ 0
 SPI_INT
 Wire Wire Line
@@ -1440,7 +1429,6 @@ F 3 "" H 4490 1390 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 NoConn ~ 8670 1620
-NoConn ~ 8670 1720
 NoConn ~ 8670 1920
 NoConn ~ 8670 2120
 NoConn ~ 8670 2220
@@ -1885,8 +1873,8 @@ Connection ~ 4610 5860
 Wire Wire Line
 	4610 5860 4680 5860
 Wire Wire Line
-	6880 4720 7270 4720
-Text Label 6880 4720 0    50   ~ 0
+	8670 1720 9060 1720
+Text Label 8760 1720 0    50   ~ 0
 CLK_EN
 Text Label 6880 4420 0    50   ~ 0
 SPI_INT
@@ -2017,4 +2005,29 @@ F 3 "https://www.usb.org/sites/default/files/documents/usb_type-c.zip" H 1970 21
 $EndComp
 NoConn ~ 2420 2240
 NoConn ~ 2420 2040
+$Comp
+L Connector_Generic:Conn_01x05 J5
+U 1 1 60861E42
+P 10440 3090
+F 0 "J5" H 10358 3415 50  0000 C CNN
+F 1 "Conn_01x05" H 10520 3041 50  0001 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Horizontal" H 10440 3090 50  0001 C CNN
+F 3 "~" H 10440 3090 50  0001 C CNN
+	1    10440 3090
+	1    0    0    1   
+$EndComp
+$Comp
+L power:+3.3V #PWR0119
+U 1 1 6088590C
+P 10200 2890
+F 0 "#PWR0119" H 10200 2740 50  0001 C CNN
+F 1 "+3.3V" H 10215 3063 50  0000 C CNN
+F 2 "" H 10200 2890 50  0001 C CNN
+F 3 "" H 10200 2890 50  0001 C CNN
+	1    10200 2890
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10200 2890 10240 2890
+NoConn ~ 7270 4720
 $EndSCHEMATC
